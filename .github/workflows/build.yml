@@ -17,6 +17,7 @@ jobs:
         distribution: 'temurin'
         
     - name: Build Spigot Version Only
+      working-directory: ./
       run: ./gradlew :spigot:shadowJar --no-daemon
 
     - name: Upload Artifact
